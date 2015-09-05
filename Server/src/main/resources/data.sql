@@ -1,0 +1,3 @@
+INSERT INTO Users (Username, Avatar, TotalTouchesCount) SELECT 'alice', NULL, 0 WHERE NOT EXISTS (SELECT * FROM Users WHERE Username = 'alice');
+INSERT INTO Users (Username, Avatar, TotalTouchesCount) SELECT 'bob', NULL, 0 WHERE NOT EXISTS (SELECT * FROM Users WHERE Username = 'bob');
+INSERT INTO Users (Username, Avatar, TotalTouchesCount) SELECT 'carol', NULL, 0 WHERE NOT EXISTS (SELECT * FROM Users WHERE Username = 'carol');

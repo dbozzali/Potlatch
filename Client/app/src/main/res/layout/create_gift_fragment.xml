@@ -1,0 +1,109 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_gift_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+	tools:context="org.coursera.androidcapstone.client.ui.gift.CreateGiftFragment">
+
+    <ScrollView
+		android:id="@+id/create_gift_fragment_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+			android:id="@+id/create_gift_fragment_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gift_create_label_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gift_create_label_title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/gift_create_value_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gift_create_value_title_placeholder"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/gift_create_label_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gift_create_label_text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/gift_create_value_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gift_create_value_text_placeholder"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/gift_create_label_image_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gift_create_label_image_meta_data"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/gift_create_value_image_content"
+                android:src="@drawable/ic_stub"
+                android:layout_width="320dp"
+                android:layout_height="320dp" />
+
+            <LinearLayout
+				android:id="@+id/create_gift_fragment_image_buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/create_gift_button_select_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gift_create_button_select_image_value"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/create_gift_button_capture_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gift_create_button_capture_image_value"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/create_gift_fragment_confirm_buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/create_gift_button_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gift_create_button_cancel_value"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/create_gift_button_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gift_create_button_confirm_value"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.coursera.androidcapstone.client"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+        
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+	<uses-feature
+		android:name="android.hardware.camera"
+		android:required="false" />
+
+    <application
+		android:name="org.coursera.androidcapstone.client.globals.PotlatchApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="org.coursera.androidcapstone.client.ui.login.LoginScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="org.coursera.androidcapstone.client.ui.gift.ViewGiftChainsActivity"
+            android:label="@string/title_activity_view_giftchains" >
+        </activity>
+		<activity
+            android:name="org.coursera.androidcapstone.client.ui.gift.ViewGiftChainActivity"
+            android:label="@string/title_activity_view_giftchain" >
+        </activity>
+		<activity
+            android:name="org.coursera.androidcapstone.client.ui.gift.ViewGiftActivity"
+            android:label="@string/title_activity_view_gift" >
+        </activity>
+		<activity
+            android:name="org.coursera.androidcapstone.client.ui.gift.CreateGiftChainActivity"
+            android:label="@string/title_activity_create_gift_chain" >
+        </activity>
+		<activity
+            android:name="org.coursera.androidcapstone.client.ui.gift.CreateGiftInChainActivity"
+            android:label="@string/title_activity_create_gift_in_chain" >
+        </activity>
+		<activity
+            android:name="org.coursera.androidcapstone.client.ui.gift.ViewTopGiftGiversActivity"
+            android:label="@string/title_activity_view_top_gift_givers" >
+        </activity>
+		<activity
+            android:name="org.coursera.androidcapstone.client.ui.settings.EditPreferencesActivity"
+            android:label="@string/title_activity_edit_preferences" >
+        </activity>
+
+        <receiver android:name="org.coursera.androidcapstone.client.ui.updater.GiftUpdater"/>
+
+    </application>
+
+</manifest>

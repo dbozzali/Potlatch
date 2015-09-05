@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sync_frequency">
+        <item name="1">1 minute</item>
+        <item name="5">5 minutes</item>
+        <item name="60">60 minutes</item>
+    </string-array>
+    <string-array name="sync_frequency_values">
+        <item name="1">1</item>
+        <item name="5">5</item>
+        <item name="60">60</item>
+    </string-array>
+</resources>

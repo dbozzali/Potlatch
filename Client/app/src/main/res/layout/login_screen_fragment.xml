@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_screen_fragment"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.coursera.androidcapstone.client.ui.login.LoginScreenFragment">
+
+    <TextView
+        android:id="@+id/login_screen_server_label"
+        android:text="@string/server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/login_screen_server_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/login_screen_server_default_value"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:maxLines="1">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/login_screen_username_label"
+        android:text="@string/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/login_screen_username_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/login_screen_username_default_value"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/login_screen_password_label"
+        android:text="@string/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/login_screen_password_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:text="@string/login_screen_password_default_value"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/login" />
+
+</LinearLayout>

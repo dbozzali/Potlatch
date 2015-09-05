@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_item_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_item_settings_title" />
+
+    <item
+        android:id="@+id/menu_item_view_top_gift_givers"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_item_view_top_gift_givers_title" />
+		
+	<item
+        android:id="@+id/menu_item_logout"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_item_logout_title" />
+
+</menu>

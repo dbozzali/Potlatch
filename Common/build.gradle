@@ -1,0 +1,41 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.7
+
+compileJava {
+    targetCompatibility = 1.7
+}
+
+repositories {
+    mavenCentral()
+	
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile("org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final")
+    compile("com.google.guava:guava:18.0")
+    compile("com.squareup.retrofit:retrofit:1.8.0")
+    compile("commons-io:commons-io:2.4")
+
+    compile("org.apache.commons:commons-lang3:3.3.2")
+	compile("org.apache.httpcomponents:httpclient:4.3.4")
+
+    compile("com.fasterxml.jackson.core:jackson-core:2.4.0")
+    compile("com.fasterxml.jackson.core:jackson-databind:2.4.0")
+    compile("com.fasterxml.jackson.core:jackson-annotations:2.4.0")
+    compile("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.4.0")
+
+    testCompile("com.googlecode.openpojo:openpojo:0.4.9")
+    testCompile("junit:junit:4.10")
+
+    compile fileTree(dir: "libs", include: ["*.jar"])
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.2'
+}

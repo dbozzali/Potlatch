@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/edit_preferences_fragment"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	tools:context="org.coursera.androidcapstone.client.ui.settings.EditPreferencesFragment">
+
+    <PreferenceCategory
+        android:summary="@string/preferences_category_summary"
+        android:title="@string/preferences_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditTextPreference
+            android:key="default_server_address"
+            android:title="@string/preferences_default_server_address_title"
+            android:summary="@string/preferences_default_server_address_summary"
+            android:dialogTitle="@string/preferences_default_server_address_dialog_title"
+            android:defaultValue="@string/login_screen_server_default_value"
+            android:maxLines="1" />
+
+        <CheckBoxPreference
+            android:key="filter_flagged_gifts"
+            android:summary="@string/preferences_filter_flagged_gifts_summary"
+            android:title="@string/preferences_filter_flagged_gifts_title"
+            android:defaultValue="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+		<ListPreference
+            android:entries="@array/sync_frequency"
+            android:entryValues="@array/sync_frequency_values"
+            android:key="gifts_sync_frequency"
+            android:summary="@string/preferences_gift_synchronization_summary"
+            android:title="@string/preferences_gift_synchronization_title"
+            android:defaultValue="60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>
